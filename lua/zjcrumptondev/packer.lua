@@ -70,6 +70,8 @@ return require('packer').startup(function(use)
     use 'nvim-pack/nvim-spectre'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
+    use 'jaimecgomezz/here.term'
+
     -- themes 
     use 'Mofiqul/vscode.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
