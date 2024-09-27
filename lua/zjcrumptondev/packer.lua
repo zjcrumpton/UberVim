@@ -68,7 +68,8 @@ return require('packer').startup(function(use)
     use 'vim-test/vim-test'
     use 'gorbit99/codewindow.nvim'
     use 'nvim-pack/nvim-spectre'
-
+    use 'vim-airline/vim-airline'
+    use 'vim-airline/vim-airline-themes'
     -- themes 
     use 'Mofiqul/vscode.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
