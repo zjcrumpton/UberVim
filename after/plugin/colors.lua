@@ -1,10 +1,20 @@
 vim.o.background = 'dark'
 
+local function toggle_dark_theme()
+    local current_bg = vim.opt.background:get()
+    if current_bg == "dark" then
+        vim.opt.background = "light"
+        print("Switched to light background")
+    else
+        vim.opt.background = "dark"
+        print("Switched to dark background")
+    end
+end
+
+vim.keymap.set("n", "<leader>pd", toggle_dark_theme)
+
 local c = require('vscode.colors').get_colors()
 require('vscode').setup({
-    -- Alternatively set style in setup
-    -- style = 'light'
-
     -- Enable transparent background
     transparent = false,
 
@@ -16,12 +26,6 @@ require('vscode').setup({
 
     -- Disable nvim-tree background color
     disable_nvimtree_bg = true,
-
-    -- Override colors (see ./lua/vscode/colors.lua)
-    color_overrides = {
-        vscLineNumber = '#FFFFFF',
-    },
-
     -- Override highlight groups (see ./lua/vscode/theme.lua)
     group_overrides = {
         -- this supports the same val table as vim.api.nvim_set_hl
@@ -30,4 +34,14 @@ require('vscode').setup({
     }
 })
 
+-- default color scheme is vscode
 vim.cmd.colorscheme "vscode"
+
+require("themery").setup({
+    themes = {"vscode", "catppuccin", "tokyonight", "kanagawa", "nightfox", "rose-pine", "everforest", }, -- Your list of installed colorschemes.
+    livePreview = true, -- Apply theme while picking. Default to true.
+})
+
+vim.keymap.set("n", "<leader>pt", function()
+    vim.cmd("Themery")
+end, { noremap = true })
