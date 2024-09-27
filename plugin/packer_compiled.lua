@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
+  },
   neovim = {
     loaded = true,
     path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/neovim",

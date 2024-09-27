@@ -52,6 +52,8 @@ return require('packer').startup(function(use)
         end
     })
 
+    use 'karb94/neoscroll.nvim'
+
     use 'zaldih/themery.nvim'
 
     -- themes 
