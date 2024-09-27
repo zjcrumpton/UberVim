@@ -1,7 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
@@ -57,6 +57,13 @@ return require('packer').startup(function(use)
     use "folke/which-key.nvim"
 
     use 'zaldih/themery.nvim'
+
+    use {
+        'goolord/alpha-nvim',
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        end
+    }
 
     -- themes 
     use 'Mofiqul/vscode.nvim'
