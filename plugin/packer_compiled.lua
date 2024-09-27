@@ -90,6 +90,11 @@ _G.packer_plugins = {
     path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["codewindow.nvim"] = {
+    loaded = true,
+    path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/codewindow.nvim",
+    url = "https://github.com/gorbit99/codewindow.nvim"
+  },
   everforest = {
     loaded = true,
     path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/everforest",
