@@ -11,7 +11,7 @@ local function toggle_dark_theme()
     end
 end
 
-vim.keymap.set("n", "<leader>pd", toggle_dark_theme)
+vim.keymap.set("n", "<leader>pd", toggle_dark_theme, { desc = "toggle dark theme" })
 
 local c = require('vscode.colors').get_colors()
 require('vscode').setup({
@@ -44,4 +44,4 @@ require("themery").setup({
 
 vim.keymap.set("n", "<leader>pt", function()
     vim.cmd("Themery")
-end, { noremap = true })
+end, { noremap = true, desc = "open theme switcher" })
