@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
 
     use 'vim-test/vim-test'
     use 'gorbit99/codewindow.nvim'
+    use 'nvim-pack/nvim-spectre'
 
     -- themes 
     use 'Mofiqul/vscode.nvim'
