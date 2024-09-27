@@ -72,6 +72,8 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
     use 'jaimecgomezz/here.term'
 
+    use 'b0o/nvim-tree-preview.lua'
+
     -- themes 
     use 'Mofiqul/vscode.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
@@ -81,3 +83,4 @@ return require('packer').startup(function(use)
     use "rose-pine/neovim"
     use 'sainnhe/everforest'
 end)
+

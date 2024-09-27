@@ -156,6 +156,11 @@ _G.packer_plugins = {
     path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
   },
+  ["nvim-tree-preview.lua"] = {
+    loaded = true,
+    path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/nvim-tree-preview.lua",
+    url = "https://github.com/b0o/nvim-tree-preview.lua"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/Users/P3070245/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
