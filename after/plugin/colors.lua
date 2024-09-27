@@ -42,6 +42,6 @@ require("themery").setup({
     livePreview = true, -- Apply theme while picking. Default to true.
 })
 
-vim.keymap.set("n", "<leader>pt", function()
+vim.keymap.set("n", "<leader>pT", function()
     vim.cmd("Themery")
 end, { noremap = true, desc = "open theme switcher" })
