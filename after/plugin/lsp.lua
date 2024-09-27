@@ -72,6 +72,16 @@ lsp.lua_ls.setup {
     }
 }
 
+require'lspconfig'.rust_analyzer.setup{
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = false;
+      }
+    }
+  }
+}
+
 -- Autocomplete
 
 local cmp = require('cmp')
