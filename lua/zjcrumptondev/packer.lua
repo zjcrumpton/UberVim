@@ -65,6 +65,8 @@ return require('packer').startup(function(use)
         end
     }
 
+    use 'vim-test/vim-test'
+
     -- themes 
     use 'Mofiqul/vscode.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
