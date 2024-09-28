@@ -1,10 +1,4 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
--- Only required if you have packer configured as `opt`
-
-
 return require('packer').startup(function(use)
-    -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
     use {
@@ -70,9 +64,9 @@ return require('packer').startup(function(use)
     use 'nvim-pack/nvim-spectre'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
-    use 'jaimecgomezz/here.term'
 
     use 'b0o/nvim-tree-preview.lua'
+    use 'voldikss/vim-floaterm'
 
     -- themes 
     use 'Mofiqul/vscode.nvim'

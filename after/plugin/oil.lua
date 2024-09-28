@@ -1,5 +1,8 @@
-require("oil").setup({
+local oil = require("oil")
+
+oil.setup({
     default_file_explorer = false
 })
 
-vim.keymap.set("n", "<leader>po", "<CMD>Oil<CR>", { desc = "Open current parent directory with Oil" })
+vim.keymap.set("n", "<leader>po", oil.toggle_float, { desc = "Open current parent directory with Oil" })
+
