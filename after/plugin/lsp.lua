@@ -23,6 +23,18 @@ lsp_zero.extend_lspconfig({
     capabilities = require('cmp_nvim_lsp').default_capabilities(),
 })
 
+-- Mason setup for auto installing LSPs
+require('mason').setup({})
+require('mason-lspconfig').setup({
+  ensure_installed = {
+    'tsserver',     -- JavaScript/TypeScript
+    'lua_ls',       -- Lua
+    'rust-analyzer',
+    'eslint',
+  },
+  automatic_installation = true,  -- Automatically install if not present
+})
+
 -- Language Setup
 local lsp = require('lspconfig')
 

@@ -67,6 +67,12 @@ return require('packer').startup(function(use)
 
     use 'b0o/nvim-tree-preview.lua'
     use 'voldikss/vim-floaterm'
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig"
+    }
+
 
     -- themes 
     use 'Mofiqul/vscode.nvim'
