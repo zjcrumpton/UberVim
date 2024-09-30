@@ -27,10 +27,11 @@ lsp_zero.extend_lspconfig({
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {
-    'tsserver',     -- JavaScript/TypeScript
+    'ts_ls',     -- JavaScript/TypeScript
     'lua_ls',       -- Lua
-    'rust-analyzer',
+    'rust_analyzer',
     'eslint',
+    'pyright'
   },
   automatic_installation = true,  -- Automatically install if not present
 })
