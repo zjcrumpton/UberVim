@@ -64,10 +64,15 @@ return require('packer').startup(function(use)
     use 'nvim-pack/nvim-spectre'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
-
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
     use 'b0o/nvim-tree-preview.lua'
     use 'voldikss/vim-floaterm'
-
+    use "folke/trouble.nvim"
     -- themes 
     use 'Mofiqul/vscode.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
