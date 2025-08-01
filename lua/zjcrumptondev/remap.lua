@@ -54,3 +54,6 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+vim.keymap.set("n", "<leader>pc", "<cmd>ClaudeCode<CR>")
+vim.keymap.set("n", "<leader>pr", "<cmd>ClaudeCodeResume<CR>")
+
