@@ -90,10 +90,17 @@ packer.startup(function(use)
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
-        "neovim/nvim-lspconfig"
     }
 
-
+    use {
+        'greggh/claude-code.nvim',
+            requires = {
+                'nvim-lua/plenary.nvim', -- Required for git operations
+        },
+        config = function()
+        require('claude-code').setup()
+    end
+}
     -- themes 
     use 'Mofiqul/vscode.nvim'
     use { "catppuccin/nvim", as = "catppuccin" }
